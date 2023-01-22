@@ -25,19 +25,46 @@ class Tst1 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    "E-Mail",
-                    style: TextStyle(color: Colors.white, fontSize: 35),
+                  Row(
+                    children: const [
+                      CircleAvatar(
+                        backgroundImage: AssetImage('assets/im2.png'),
+                        radius: 20,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "MH Pollob",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
-                  Text(
-                    "Somthing New",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 50),
+                    child: const Text(
+                      "pollob@gmail.com",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          letterSpacing: 1.1,
+                          fontWeight: FontWeight.normal),
+                    ),
                   ),
-                  SizedBox(
-                    height: 60,
+                  // Text(
+                  //   "E-Mail",
+                  //   style: TextStyle(color: Colors.white, fontSize: 35),
+                  // ),
+
+                  const SizedBox(
+                    height: 80,
                   ),
                   Row(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.person,
                         color: Colors.white,
@@ -51,7 +78,7 @@ class Tst1 extends StatelessWidget {
                         style: TextStyle(fontSize: 20, color: Colors.white),
                       ),
                       SizedBox(
-                        width: 112,
+                        width: 110,
                       ),
                       Icon(
                         Icons.arrow_forward_ios,
@@ -60,11 +87,11 @@ class Tst1 extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(
-                    height: 12,
+                  const SizedBox(
+                    height: 20,
                   ),
                   Row(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.email,
                         color: Colors.white,
@@ -87,12 +114,12 @@ class Tst1 extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(
-                    height: 12,
+                  const SizedBox(
+                    height: 20,
                   ),
 
                   Row(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.send,
                         color: Colors.white,
@@ -115,7 +142,36 @@ class Tst1 extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(),
+
+                  const SizedBox(
+                    height: 20,
+                  ),
+
+                  Row(
+                    children: const [
+                      Icon(
+                        Icons.all_inbox,
+                        color: Colors.white,
+                        size: 25,
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
+                      Text(
+                        'All Inboxes',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                      SizedBox(
+                        width: 72,
+                      ),
+                      Icon(
+                        Icons.arrow_forward_ios,
+                        color: Colors.white,
+                        size: 15,
+                      )
+                    ],
+                  ),
+
                   // ListTile(
                   //   contentPadding:
                   //       EdgeInsets.symmetric(horizontal: 0, vertical: 40),
